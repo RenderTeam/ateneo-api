@@ -2,6 +2,7 @@ var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 
 var EventSchema = new Schema({
+  answers: {},
   name: String,
   study_group: String,
   jackpot: Number,
@@ -16,7 +17,8 @@ var EventSchema = new Schema({
     answer: String
   }],
   price: Number,
-  total_question_per_event: Number
+  total_question_per_event: Number,
+  quiz: {}
 });
 
 module.exports = mongoose.model( 'Event', EventSchema );
