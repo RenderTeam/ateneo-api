@@ -6,6 +6,7 @@ var EventSchema = new Schema({
   name: String,
   study_group: String,
   jackpot: Number,
+  gladiators: [String],
   users: [String],
   date: Date,
   max_time_per_event: Number,
