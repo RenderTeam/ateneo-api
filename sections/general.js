@@ -11,6 +11,7 @@ var fs        = require('fs'),
 fs.readdirSync( basePath ).forEach(
   function ( file ) {
     var path = basePath + '/' + file;
+    console.log(path);
     schemas[file.slice(0,-3)] = require( path );
   }
 );

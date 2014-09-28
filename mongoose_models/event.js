@@ -9,7 +9,7 @@ var EventSchema = new Schema({
   date: Date,
   questions: [{
     question: String,
-    options: [String],
+    alternatives: [String],
     user: String,
     answer: String
   }]
